@@ -90,6 +90,7 @@ body {
   /* or 25% */
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 }
 .conversion-box .conversion-box-body {
   width: 550px;
