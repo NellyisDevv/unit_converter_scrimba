@@ -2,6 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+.dark-theme {
+  --light: #1f2937;
+  --light-text: #ffffff;
+  --light-text-p: #d2d2d2;
+  --dark: #fbf7ee;
+  --dark-text: #1a1921;
+  --dark-text-p: #4e4e4e;
+}
+::selection {
+  background-color: #fc00ff;
 }
 :root {
   --light: #fbf7ee;
@@ -12,25 +24,33 @@
   --dark-text-p: #d2d2d2;
 }
 body {
-  background: #12c2e9; /* fallback for old browsers */
+  background: #fc00ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #f64f59,
-    #c471ed,
-    #12c2e9
+    #00dbde,
+    #fc00ff
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f64f59,
-    #c471ed,
-    #12c2e9
+    #00dbde,
+    #fc00ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@keyframes main {
+  from {
+    transform: translateY(150%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 .conversion-box {
   max-width: 550px;
   max-height: 260px;
   margin: auto;
   position: relative;
+  animation: main 2.8s ease;
+  z-index: 9999;
   .conversion-box-header {
     position: absolute;
     width: 550px;
@@ -192,6 +212,7 @@ footer {
   position: relative;
   top: 350px;
   text-align: center;
+  color: white;
   h4 {
     font-size: 25px;
   }
@@ -199,5 +220,14 @@ footer {
     line-height: 40px;
     font-size: 20px;
     text-decoration: none;
+    color: #d2d2d2;
+    &:hover {
+      color: white;
+    }
+  }
+  .change-theme {
+    margin-top: 10px;
+    height: 4vh;
+    cursor: pointer;
   }
 }

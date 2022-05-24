@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.dark-theme {
+  --light: #1f2937;
+  --light-text: #ffffff;
+  --light-text-p: #d2d2d2;
+  --dark: #fbf7ee;
+  --dark-text: #1a1921;
+  --dark-text-p: #4e4e4e;
+}
+
+::selection {
+  background-color: #fc00ff;
+}
+
+:root {
+  --light: #fbf7ee;
+  --dark: #1f2937;
+  --light-text: #1a1921;
+  --light-text-p: #4e4e4e;
+  --dark-text: #ffffff;
+  --dark-text-p: #d2d2d2;
+}
+
+body {
+  background: #fc00ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00dbde, #fc00ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes main {
+  from {
+    transform: translateY(150%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.conversion-box {
+  max-width: 550px;
+  max-height: 260px;
+  margin: auto;
+  position: relative;
+  animation: main 2.8s ease;
+  z-index: 9999;
+}
+.conversion-box .conversion-box-header {
+  position: absolute;
+  width: 550px;
+  height: 260px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
+}
+.conversion-box .conversion-box-header h1 {
+  position: absolute;
+  width: 448.4px;
+  height: 38px;
+  left: 51px;
+  top: 53px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 38px;
+  /* identical to box height, or 173% */
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+.conversion-box .conversion-box-header h2 {
+  position: absolute;
+  width: 211px;
+  height: 51.23px;
+  left: 169px;
+  top: 155px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 97.5723px;
+  line-height: 24px;
+  /* or 25% */
+  text-align: center;
+  color: #ffffff;
+}
+.conversion-box .conversion-box-body {
+  width: 550px;
+  height: 550px;
+  margin-top: 250px;
+  background: var(--dark);
+}
+.conversion-box .conversion-box-body .first-h3 {
+  position: absolute;
+  width: 346px;
+  height: 25px;
+  left: 102px;
+  top: 297px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  color: var(--dark-text);
+}
+.conversion-box .conversion-box-body .second-h3 {
+  position: absolute;
+  width: 346px;
+  height: 25px;
+  left: 102px;
+  top: 379px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  color: var(--dark-text);
+}
+.conversion-box .conversion-box-body .third-h3 {
+  position: absolute;
+  width: 346px;
+  height: 25px;
+  left: 102px;
+  top: 461px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  color: var(--dark-text);
+}
+.conversion-box .conversion-box-body .first-p {
+  position: absolute;
+  width: 346px;
+  height: 25px;
+  left: 102px;
+  top: 327px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  color: var(--dark-text-p);
+}
+.conversion-box .conversion-box-body .second-p {
+  position: absolute;
+  width: 346px;
+  height: 25px;
+  left: 102px;
+  top: 409px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  color: var(--dark-text-p);
+}
+.conversion-box .conversion-box-body .third-p {
+  position: absolute;
+  width: 346px;
+  height: 21px;
+  left: 102px;
+  top: 491px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  color: var(--dark-text-p);
+}
+
+footer {
+  position: relative;
+  top: 350px;
+  text-align: center;
+  color: white;
+}
+footer h4 {
+  font-size: 25px;
+}
+footer a {
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #d2d2d2;
+}
+footer a:hover {
+  color: white;
+}
+footer .change-theme {
+  margin-top: 10px;
+  height: 4vh;
+  cursor: pointer;
+}
