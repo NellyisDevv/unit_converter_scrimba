@@ -15,6 +15,8 @@ icon.onclick = () => {
 let countEl = document.getElementById('count-el');
 // EXECUTION OF METERS TO FEET
 let firstP = document.getElementById('first-p');
+// EXECUTION OF LITERS TO GALLON
+let secondP = document.getElementById('second-p');
 // PLACEHOLDER NUMBERS
 let secondNumber = 2.222;
 let thirdNumber = 30;
@@ -26,17 +28,17 @@ function input() {
   let meterNumber = number;
   let meterConversion = 3.28084;
   meterNumber *= meterConversion;
-  let feetNumber = number;
-  let feetConversion = 0.3048;
+  let feetNumber = meterNumber;
+  let feetConversion = meterNumber / 3.281;
   feetNumber *= feetConversion;
   firstP.textContent =
     number +
     ' meters = ' +
     meterNumber.toFixed(3) +
     ' feet | ' +
-    feetNumber +
+    meterNumber.toFixed(3) +
     ' feet = ' +
-    feetConversion.toFixed(3) +
+    feetConversion.toFixed(0) +
     ' meters';
 }
 
