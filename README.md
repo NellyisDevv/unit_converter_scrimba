@@ -4,7 +4,11 @@ unit converter solo project
 
 # Why?
 
-I am building this as a solo project for scrimba, I want to test my skills without any help from videos only from google and my prior knowledge or notes.
+I am building this as a solo project for Scrimba, I want to test my skills without any help from videos only from google and my prior knowledge or notes.
+
+# Hope to learn
+
+I hope to learn how to better understand the basic functions of Javascript in a real-world project. Also, to sharpen my skills and memory of different strategies to write a shorter and quicker script.
 
 # Resources
 
